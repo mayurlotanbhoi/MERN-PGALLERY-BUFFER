@@ -29,10 +29,13 @@ const Registation = () => {
     formdata.append("About", e.target.About.value);
     formdata.append("Mob", e.target.Mob.value);
 
-    const res = await fetch("http://localhost:8000/user/register", {
-      method: "POST",
-      body: formdata,
-    });
+    const res = await fetch(
+      "https://mern-projectgallery-server.vercel.app/user/register",
+      {
+        method: "POST",
+        body: formdata,
+      }
+    );
 
     const data = await res.json();
 

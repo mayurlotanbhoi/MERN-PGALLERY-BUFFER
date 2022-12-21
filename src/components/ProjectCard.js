@@ -43,7 +43,8 @@ export default function ProjectCard({
     project.Avatar = Avatars;
     project.userdata = { ...data };
 
-    // console.log(project);
+    console.log(" project id " + project._id);
+    console.log("use id" + project.userdata._id);
 
     const res = await fetch("http://localhost:8000/user/public", {
       method: "POST",
@@ -85,8 +86,7 @@ export default function ProjectCard({
                                 onClick={() => dispatch(aboutme(project))}
                                 src={
                                   ` ${Avatars || project?.Avatar}`
-                                    ? "http://localhost:8000/" +
-                                      `${Avatars || project.Avatar}`
+                                    ? `${Avatars || project.Avatar}`
                                     : "/static/images/avatar/1.jpg"
                                 }
                               ></Avatar>
@@ -97,8 +97,7 @@ export default function ProjectCard({
                               onClick={() => dispatch(aboutme(project))}
                               src={
                                 `${Avatars || project?.Avatar}`
-                                  ? "http://localhost:8000/" +
-                                    `${Avatars || project.Avatar}`
+                                  ? `${Avatars || project.Avatar}`
                                   : "/static/images/avatar/1.jpg"
                               }
                             ></Avatar>
@@ -120,7 +119,7 @@ export default function ProjectCard({
                       <CardMedia
                         component="img"
                         height="130"
-                        image={"http://localhost:8000/" + project.Photo}
+                        image={project.Photo}
                         alt="Paella dish"
                       />
                       <CardContent>

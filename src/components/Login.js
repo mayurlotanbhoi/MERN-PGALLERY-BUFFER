@@ -35,6 +35,7 @@ const Login = () => {
         if (response.status === 401) {
           setError(true);
           // return response.json();
+          return;
         }
         return response.json();
       })

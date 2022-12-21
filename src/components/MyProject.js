@@ -14,7 +14,7 @@ const MyProject = () => {
   const navigate = useNavigate();
   const { data, access } = useSelector((state) => state.user);
 
-  const [fetchedData, setFetchedData] = useState({});
+  const [fetchedData, setFetchedData] = useState([]);
 
   const { Refreshe } = useContext(Revderer);
 
@@ -50,13 +50,13 @@ const MyProject = () => {
     <>
       <Box
         sx={{
-          height: "80vh",
+          height: "100%",
           display: "flex",
           alignItems: "center",
-          mt: "200px",
+          marginTop: "50px",
         }}
       >
-        {Avatar ? (
+        {projectDetails?.length >= 1 ? (
           <Suspense
             fallback={
               <Typography
@@ -74,7 +74,7 @@ const MyProject = () => {
             />
           </Suspense>
         ) : (
-          <Typography>PLEASE ADD YOU PROJECT</Typography>
+          <Typography>NO PROJECT</Typography>
         )}
       </Box>
     </>

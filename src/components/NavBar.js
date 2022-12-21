@@ -85,11 +85,7 @@ const NavBar = () => {
             <Button onClick={() => setmenu(!menu)}>
               <Avatar
                 alt="Remy Sharp"
-                src={
-                  data?.Avatar
-                    ? "http://localhost:8000/" + data.Avatar
-                    : "/static/images/avatar/1.jpg"
-                }
+                src={data?.Avatar ? data.Avatar : "/static/images/avatar/1.jpg"}
               ></Avatar>
               {/* {console.log(data.Avatar)} */}
             </Button>

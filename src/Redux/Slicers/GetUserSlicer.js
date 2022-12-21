@@ -1,7 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-
-
 export const STATUSES = Object.freeze({
   IDLE: "idle",
   ERROR: "error",
@@ -31,7 +29,6 @@ const userSlicer = createSlice({
     },
   },
 
-
   extraReducers: (builder) => {
     builder
       .addCase(fetchUser.pending, (state, action) => {
@@ -48,8 +45,6 @@ const userSlicer = createSlice({
       });
   },
 });
-
-
 
 export const fetchUser = createAsyncThunk("user/data", async () => {
   try {

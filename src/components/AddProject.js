@@ -50,7 +50,7 @@ const AddPeoject = ({ open, setOpen }) => {
     formdata.append("Description", e.target.discre.value);
     formdata.append("Stack", e.target.Stack.value);
 
-    const res = await fetch("http://localhost:8000/user/projectadd", {
+    const res = await fetch("https://mern-projectgallery-server.vercel.app/user/projectadd", {
       method: "POST",
       body: formdata,
     });

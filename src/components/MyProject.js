@@ -20,7 +20,7 @@ const MyProject = () => {
 
   useEffect(() => {
     const fetch = async () => {
-      const project = await FetchData("http://localhost:8000/user/mayProject");
+      const project = await FetchData("https://mern-projectgallery-server.vercel.app/user/mayProject");
 
       // console.log(project);
 

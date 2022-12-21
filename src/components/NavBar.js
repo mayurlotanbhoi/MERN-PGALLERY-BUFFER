@@ -44,7 +44,7 @@ const NavBar = () => {
     //   })
     //   .catch((error) => console.log(error));
     const fetch = async () => {
-      const res = await FetchData("https://mern-projectgallery-server.vercel.app/user/logout");
+      const res = await FetchData("https://mern-project-gallery-server.onrender.com/user/logout");
 
       if (res.massege === "logout") {
         navigation("/login");

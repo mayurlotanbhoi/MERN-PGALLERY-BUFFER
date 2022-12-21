@@ -30,7 +30,7 @@ const Registation = () => {
     formdata.append("Mob", e.target.Mob.value);
 
     const res = await fetch(
-      "https://mern-projectgallery-server.vercel.app/user/register",
+      "https://mern-project-gallery-server.onrender.com/user/register",
       {
         method: "POST",
         body: formdata,

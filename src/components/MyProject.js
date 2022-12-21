@@ -20,7 +20,7 @@ const MyProject = () => {
 
   useEffect(() => {
     const fetch = async () => {
-      const project = await FetchData("https://mern-projectgallery-server.vercel.app/user/mayProject");
+      const project = await FetchData("https://mern-project-gallery-server.onrender.com/user/mayProject");
 
       // console.log(project);
 

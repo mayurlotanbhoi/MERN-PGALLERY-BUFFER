@@ -23,7 +23,7 @@ const Login = () => {
       password: e.target.password.value,
     };
 
-    fetch("https://mern-projectgallery-server.vercel.app/user/login", {
+    fetch("https://mern-project-gallery-server.onrender.com/user/login", {
       method: "POST",
       body: JSON.stringify(loginData),
       credentials: "include",

@@ -46,7 +46,7 @@ export default function ProjectCard({
     console.log(" project id " + project._id);
     console.log("use id" + project.userdata._id);
 
-    const res = await fetch("https://mern-projectgallery-server.vercel.app/user/public", {
+    const res = await fetch("https://mern-project-gallery-server.onrender.com/user/public", {
       method: "POST",
       body: JSON.stringify(project),
       credentials: "include",

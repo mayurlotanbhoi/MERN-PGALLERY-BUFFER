@@ -26,7 +26,7 @@ const Login = () => {
     fetch("https://mern-project-gallery-server.onrender.com/user/login", {
       method: "POST",
       body: JSON.stringify(loginData),
-      credentials: 'same-origin',
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
       },

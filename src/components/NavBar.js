@@ -87,7 +87,7 @@ const NavBar = () => {
                 alt="Remy Sharp"
                 src={data?.Avatar ? data.Avatar : "/static/images/avatar/1.jpg"}
               ></Avatar>
-              {/* {console.log(data.Avatar)} */}
+              {console.log(data.Avatar)}
             </Button>
             <Menu
               open={menu}

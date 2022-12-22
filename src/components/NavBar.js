@@ -105,7 +105,7 @@ const NavBar = () => {
                 horizontal: "right",
               }}
             >
-              {Object.keys(data).length > 0 ? (
+              {Object.keys(data).length > 1 ? (
                 <MenuItem onClick={() => logOut()}>
                   <Link>
                     <Typography>LOGOUT</Typography>

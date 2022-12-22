@@ -51,7 +51,7 @@ export const fetchUser = createAsyncThunk("user/data", async () => {
     // console.log("call");
     const res = await fetch("https://mern-project-gallery-server.onrender.com/user", {
       method: "get",
-      credentials: "include",
+      credentials: 'same-origin'
     });
     const data = await res.json();
     console.log(data)

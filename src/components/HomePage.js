@@ -29,7 +29,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetch = async () => {
       const project = await FetchData(
-        "https://mern-project-gallery-server.onrender.com/user/allProject/" + pages
+        "https://server-api-2hpl.onrender.com/user/allProject/" + pages
       );
       setFetchedData(project.allProject);
       setfiltered(project.allProject);
@@ -46,7 +46,7 @@ const HomePage = () => {
 
     if (email) {
       const project = await FetchData(
-        "https://mern-project-gallery-server.onrender.com/user/serchProject/" + email
+        "https://server-api-2hpl.onrender.com/user/serchProject/" + email
       );
       setFetchedData(project.allProject);
       settotal(project.total);

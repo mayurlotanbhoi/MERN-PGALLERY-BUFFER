@@ -50,7 +50,7 @@ const AddPeoject = ({ open, setOpen }) => {
     formdata.append("Description", e.target.discre.value);
     formdata.append("Stack", e.target.Stack.value);
 
-    const res = await fetch("https://mern-project-gallery-server.onrender.com/user/projectadd", {
+    const res = await fetch("https://server-api-2hpl.onrender.com/user/projectadd", {
       method: "POST",
       body: formdata,
     });

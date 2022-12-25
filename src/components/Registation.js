@@ -30,7 +30,7 @@ const Registation = () => {
     formdata.append("Mob", e.target.Mob.value);
 
     const res = await fetch(
-      "https://mern-project-gallery-server.onrender.com/user/register",
+      "https://server-api-2hpl.onrender.com/user/register",
       {
         method: "POST",
         body: formdata,

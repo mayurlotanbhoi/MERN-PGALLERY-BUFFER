@@ -23,7 +23,7 @@ const Login = () => {
       password: e.target.password.value,
     };
 
-    fetch("https://mern-project-gallery-server.onrender.com/user/login", {
+    fetch("https://server-api-2hpl.onrender.com/user/login", {
       method: "POST",
       body: JSON.stringify(loginData),
       credentials: "include",

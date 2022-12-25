@@ -51,7 +51,7 @@ export const fetchUser = createAsyncThunk("user/data", async () => {
     // console.log("call");
     const res = await fetch("https://server-api-2hpl.onrender.com", {
       method: "get",
-      credentials: "include",
+      credentials: 'include',
     });
     const data = await res.json();
     console.log(data)

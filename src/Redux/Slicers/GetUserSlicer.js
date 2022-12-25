@@ -49,7 +49,7 @@ const userSlicer = createSlice({
 export const fetchUser = createAsyncThunk("user/data", async () => {
   try {
     // console.log("call");
-    const res = await fetch("https://server-api-2hpl.onrender.com/", {
+    const res = await fetch("https://server-api-2hpl.onrender.com", {
       method: "get",
       credentials: "include",
     });
